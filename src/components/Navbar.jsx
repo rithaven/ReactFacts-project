@@ -23,7 +23,7 @@ export default function Navbar(props) {
           <div className="w-4 h-4 bg-white rounded-full"></div>
         </div>
         <p className="text-[#918E9B] ">Dark</p>
-        <p></p>
+       
       </div>
     </nav>
   );
