@@ -17,8 +17,8 @@ export default function Navbar(props) {
       <div className="flex items-center gap-2 ">
         <p className="text-sm text-[#918E9B]">Light</p>
         <div
-          className="bg-[#2B283A] w-8 h-5 cursor-pointer rounded-[2rem] box-content  flex justify-end items-center border border-black"
-          onClick={props.toggleDarkMode}
+          className={props.darkMode ?"justify-end bg-[#2B283A] w-8 h-5 cursor-pointer rounded-[2rem] box-content flex  items-center border border-black":"justify-start bg-[#2B283A] w-8 h-5 cursor-pointer rounded-[2rem] box-content  flex  items-center border border-black"
+    }onClick={props.toggleDarkMode}
         >
           <div className="w-4 h-4 bg-white rounded-full"></div>
         </div>
